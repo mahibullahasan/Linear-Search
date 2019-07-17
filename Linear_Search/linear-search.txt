@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main ()
+{
+    int a,s,i, A[30];
+    scanf("%d",&s);
+    for(i=0; i<s; i++)
+    {
+        scanf("%d",&A[i]);
+    }
+    scanf("%d",&a);
+    for(i=0; i<=s; i++)
+    {
+        if(A[i]==a)
+        {
+            printf(" %d found at position %d\n",a,i+1);
+            return;
+        }
+    }
+    printf("Not found\n");
+    return 0;
+}
